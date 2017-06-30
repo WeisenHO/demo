@@ -1,0 +1,14 @@
+{
+    "name": "weisenho/demo",
+    "description": "test porject",
+    "type": "porject",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "weisenHO",
+            "email": "306429737@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
