@@ -1,0 +1,24 @@
+<?php namespace core;
+class View{
+    //模板文件
+    protected $file;
+    //模板变量
+    protected $vars = [];//php 5.4 5.6
+
+    public function make($file){
+        $this->file = 'view/'.$file.'.html';
+        return $this;
+    }
+
+    public function with($name, $value){
+        $this->vars[$name] = $value;
+        return $this;
+    }
+
+    public function __toString(){
+        extract($this->vars);
+        include $this->file;
+
+        return '';
+    }
+}
